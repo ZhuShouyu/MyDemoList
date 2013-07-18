@@ -1,0 +1,53 @@
+//
+// Prefix header for all source files of the 'MyDemoList' target in the 'MyDemoList' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#ifndef __MODEOVIEWCONTRLLER__
+#define __MODEOVIEWCONTRLLER__
+#import "ModelViewController.h"
+#endif
+#endif
+
+
+#if __has_feature(objc_arc)
+#define MYDEMOLISTSTRONG   strong
+#else
+#define MYDEMOLISTSTRONG   retain
+#endif
+
+#if __has_feature(objc_arc_weak)
+#define MYDEMOLISTWEAK weak
+#elif __has_feature(objc_arc)
+#define MYDEMOLISTWEAK unsafe_unretained
+#else
+#define MYDEMOLISTWEAK assign
+#endif
+
+#if __has_feature(objc_arc)
+#define MYDEMOLIST_AUTORELEASE(expression) expression
+#define MYDEMOLIST_RELEASE(expression) expression
+#define MYDEMOLIST_RETAIN(expression) expression
+#else
+#define MYDEMOLIST_AUTORELEASE(expression) [expression autorelease]
+#define MYDEMOLIST_RELEASE(expression) [expression release]
+#define MYDEMOLIST_RETAIN(expression) [expression retain]
+#endif
+
+
+
+
+#ifndef __OPTIMIZE__
+#define NSLog(...)      NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)      {}
+#endif

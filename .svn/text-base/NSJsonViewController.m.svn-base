@@ -1,0 +1,75 @@
+//
+//  NSJsonViewController.m
+//  MyDemoList
+//
+//  Created by Zhu Shouyu on 4/17/13.
+//  Copyright (c) 2013 zhu shouyu. All rights reserved.
+//
+
+#import "NSJsonViewController.h"
+
+@interface NSJsonViewController ()
+
+@end
+
+@implementation NSJsonViewController
+
++ (void)load
+{
+    @autoreleasepool {
+        [super regsterSelf:self];
+    }
+}
+
+- (id)init
+{
+    if (self = [super init])
+    {
+        @autoreleasepool {
+            self.mainTitle = [NSString stringWithFormat:@"NSJSON"];
+            self.descriptionTitle = [NSString stringWithFormat:@"NSJSON解析天气"];
+        }
+    }
+    return self;
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"天气";
+    NSError *error;
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.weather.com.cn/data/101010100.html" ]];
+    
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    
+    NSDictionary *weatherDic = [NSJSONSerialization JSONObjectWithData:response  options:NSJSONReadingMutableLeaves error:&error];
+    
+    NSDictionary *weatherInfo = [weatherDic objectForKey:@"weatherinfo"];
+    UITextView *textView = [[UITextView alloc] initWithFrame:self.view.bounds];
+    textView.editable = NO;
+    [self.view addSubview:textView];
+    [textView release];
+    textView.text = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n ", [weatherInfo objectForKey:@"city"],[weatherInfo objectForKey:@"date_y"],[weatherInfo objectForKey:@"week"], [weatherInfo objectForKey:@"weather1"], [weatherInfo objectForKey:@"temp1"]]; ;
+    
+    NSLog(@"weatherInfo字典里面的内容为--》%@", weatherDic );
+    
+    
+    
+}
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end

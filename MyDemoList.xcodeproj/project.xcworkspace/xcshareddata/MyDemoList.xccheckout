@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>29F90256-E14D-4278-A5D9-AE6308FCD8F0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyDemoList</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8CA302D9-BEC8-455F-BDAC-E4A6C6E77B5C</key>
+		<string>svn://localhost/SVN/IOS/MyDemoList</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyDemoList.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8CA302D9-BEC8-455F-BDAC-E4A6C6E77B5C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>8CA302D9-BEC8-455F-BDAC-E4A6C6E77B5C</key>
+		<string>svn://localhost</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://localhost/SVN/IOS/MyDemoList/MyDemoList.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8CA302D9-BEC8-455F-BDAC-E4A6C6E77B5C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8CA302D9-BEC8-455F-BDAC-E4A6C6E77B5C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyDemoList</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+    <CHK>OK</CHK>
+    <Order00001>20101201,1,経済政策論,田中先生,101,60</Order00001>
+    <Order00002>20101201,2,情報処理,鈴木先生,203,100</Order00002>
+    <Order00003>20101201,3,国際経済学,木村先生,201,90</Order00003>
+    <Order00004>20101201,4,,,,</Order00004>
+    <Order00005>20101201,5,マクロ経済学,中村先生,504,40</Order00005>
+    <Order00006>20101201,6,マーケティング論,山田先生,302,20</Order00006>
+    <Order00007>20101201,7,英語,アダム先生,401,10</Order00007>
+    <Order00008>20101201,8,,,,</Order00008>
+</Schedule>
