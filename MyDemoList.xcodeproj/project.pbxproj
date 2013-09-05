@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281274A617D868C6005FC245 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812749F17D868C6005FC245 /* CustomAnnotation.m */; };
+		281274A717D868C6005FC245 /* CirclePeopleInMapSmoothLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 281274A117D868C6005FC245 /* CirclePeopleInMapSmoothLineView.m */; };
+		281274A817D868C6005FC245 /* fs_main_login_login_button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 281274A217D868C6005FC245 /* fs_main_login_login_button_highlighted.png */; };
+		281274A917D868C6005FC245 /* CirclePeopleInMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281274A417D868C6005FC245 /* CirclePeopleInMapViewController.m */; };
 		2814246016A53CCD00194012 /* NSXMLParserWithKanjiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2814245F16A53CCD00194012 /* NSXMLParserWithKanjiViewController.m */; };
 		2814246216A53D6700194012 /* MyTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2814246116A53D6600194012 /* MyTest.xml */; };
 		282410F8169FB3490042CB1F /* ExitMyApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 282410F7169FB3490042CB1F /* ExitMyApplicationViewController.m */; };
@@ -164,6 +168,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2812749E17D868C6005FC245 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		2812749F17D868C6005FC245 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		281274A017D868C6005FC245 /* CirclePeopleInMapSmoothLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirclePeopleInMapSmoothLineView.h; sourceTree = "<group>"; };
+		281274A117D868C6005FC245 /* CirclePeopleInMapSmoothLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirclePeopleInMapSmoothLineView.m; sourceTree = "<group>"; };
+		281274A217D868C6005FC245 /* fs_main_login_login_button_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fs_main_login_login_button_highlighted.png; sourceTree = "<group>"; };
+		281274A317D868C6005FC245 /* CirclePeopleInMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirclePeopleInMapViewController.h; sourceTree = "<group>"; };
+		281274A417D868C6005FC245 /* CirclePeopleInMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirclePeopleInMapViewController.m; sourceTree = "<group>"; };
+		281274A517D868C6005FC245 /* GloableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GloableHeader.h; sourceTree = "<group>"; };
 		2814245E16A53CCD00194012 /* NSXMLParserWithKanjiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSXMLParserWithKanjiViewController.h; sourceTree = "<group>"; };
 		2814245F16A53CCD00194012 /* NSXMLParserWithKanjiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSXMLParserWithKanjiViewController.m; sourceTree = "<group>"; };
 		2814246116A53D6600194012 /* MyTest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MyTest.xml; sourceTree = "<group>"; };
@@ -433,6 +445,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2812749B17D86892005FC245 /* 地图圈人 */ = {
+			isa = PBXGroup;
+			children = (
+				2812749E17D868C6005FC245 /* CustomAnnotation.h */,
+				2812749F17D868C6005FC245 /* CustomAnnotation.m */,
+				281274A017D868C6005FC245 /* CirclePeopleInMapSmoothLineView.h */,
+				281274A117D868C6005FC245 /* CirclePeopleInMapSmoothLineView.m */,
+				281274A217D868C6005FC245 /* fs_main_login_login_button_highlighted.png */,
+				281274A317D868C6005FC245 /* CirclePeopleInMapViewController.h */,
+				281274A417D868C6005FC245 /* CirclePeopleInMapViewController.m */,
+				281274A517D868C6005FC245 /* GloableHeader.h */,
+			);
+			name = "地图圈人";
+			sourceTree = "<group>";
+		};
 		2814245D16A53C9F00194012 /* XML解析 */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +603,7 @@
 		2839B67C168C2E30007069F7 /* MyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2812749B17D86892005FC245 /* 地图圈人 */,
 				28295709177432BD005794B2 /* RichTextLabel */,
 				28AAC5D3171E905A00B99E5C /* AHAlertView */,
 				28AAC5CD171E8D9500B99E5C /* JSON解析 */,
@@ -1182,6 +1210,7 @@
 				28764B05169EB4670067BE2D /* plan_walk@2x.png in Resources */,
 				2814246216A53D6700194012 /* MyTest.xml in Resources */,
 				28E037FA16A54D41007EB2F7 /* tearPictures.jpg in Resources */,
+				281274A817D868C6005FC245 /* fs_main_login_login_button_highlighted.png in Resources */,
 				2851857A1731145D00353825 /* AllCitiesForWeatherReport.geojson in Resources */,
 				28BCE07A17314ED00065EFCB /* cityCodeForWeather.geojson in Resources */,
 			);
@@ -1194,6 +1223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281274A617D868C6005FC245 /* CustomAnnotation.m in Sources */,
 				28E30330168AE3D8004CEA9A /* main.m in Sources */,
 				2829570E177432D2005794B2 /* PPLabel.m in Sources */,
 				28E30334168AE3D8004CEA9A /* MyDemoListAppDelegate.m in Sources */,
@@ -1220,6 +1250,7 @@
 				28E037F816A54C80007EB2F7 /* TearPicturesViewController.m in Sources */,
 				28E037FD16A55044007EB2F7 /* TearPictures.m in Sources */,
 				28E0380416A55534007EB2F7 /* UIImage+TearImageIntoTwoPieces.m in Sources */,
+				281274A717D868C6005FC245 /* CirclePeopleInMapSmoothLineView.m in Sources */,
 				284BA9A116A63EB000D20D13 /* SendEmailWithImageViewController.m in Sources */,
 				2844E60916B25D3900A40661 /* UITextFieldColorsBorderWhileEditingViewController.m in Sources */,
 				2844E60C16B25D9500A40661 /* OuterGlowTextField.m in Sources */,
@@ -1284,6 +1315,7 @@
 				282E400C16E9752100A3E787 /* DispatchViewController.m in Sources */,
 				28AAC5D2171E8DBC00B99E5C /* NSJsonViewController.m in Sources */,
 				28AAC5D6171E908600B99E5C /* CustomAlertViewController.m in Sources */,
+				281274A917D868C6005FC245 /* CirclePeopleInMapViewController.m in Sources */,
 				28AAC5D9171E93A400B99E5C /* AHAlertView.m in Sources */,
 				28BCE07617313C890065EFCB /* SpecifiedCityWeatherViewController.m in Sources */,
 			);
