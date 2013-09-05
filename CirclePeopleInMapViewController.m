@@ -163,7 +163,7 @@
     {
         MKPolylineView *lineView = [[MKPolylineView alloc] initWithPolyline:overlay];
         lineView.strokeColor = [UIColor redColor];
-        lineView.lineWidth = DEFAULT_WIDTH_DRAW;
+        lineView.lineWidth = DEFAULT_WIDTH_DRAW * 2;
         return lineView;
     }
     return nil;
@@ -230,7 +230,7 @@
             [temp setBackgroundColor:[UIColor purpleColor]];
             [self.mainMapView addSubview:temp];
         }
-        NSLog(@"points:%@", [tempArray description]);
+        CustomNSLog(@"points:%@", [tempArray description]);
         self.lineView.origionalPoints = tempArray;
         
         [self.view addSubview:self.lineView];

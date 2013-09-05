@@ -162,6 +162,7 @@
     self.forwardPoint = [touch previousLocationInView:self];
     self.currentPoint = [touch locationInView:self];
     self.origionalPoint = [touch locationInView:self];
+    self.hasStartedToDraw = NO;
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
