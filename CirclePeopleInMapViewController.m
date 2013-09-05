@@ -226,9 +226,6 @@
         {
             CGPoint point = [self.mainMapView convertCoordinate:annotation.coordinate toPointToView:self.mainMapView];
             [tempArray addObject:NSStringFromCGPoint(point)];
-            UILabel *temp = [[UILabel alloc] initWithFrame:CGRectMake(point.x, point.y, 10, 10)];
-            [temp setBackgroundColor:[UIColor purpleColor]];
-            [self.mainMapView addSubview:temp];
         }
         CustomNSLog(@"points:%@", [tempArray description]);
         self.lineView.origionalPoints = tempArray;
