@@ -10,6 +10,8 @@
 
 @interface CirclePeopleInMapSmoothLineView ()
 
+@property (nonatomic, CustomerStrong) NSArray *origionalValuesForRead;
+
 @property (nonatomic) BOOL hasStartedToDraw;            //开始绘图，防止出现添加点的时候，将原始点添加上去
 
 @property (nonatomic) CGPoint previousPoint;            //上一次绘图的终点
@@ -19,6 +21,8 @@
 @property (nonatomic) CGPoint currentPoint;             //当前点
 
 @property (nonatomic) CGPoint origionalPoint;           //原始坐标点,暂时没什么作用
+
+@property (nonatomic) CGLayerRef clearLayer;
 
 /**
  *初始化界面的一些特定元素
@@ -46,6 +50,8 @@
 
 @implementation CirclePeopleInMapSmoothLineView
 
+@synthesize origionalValuesForRead = _origionalValuesForRead;
+
 @synthesize origionalPoints = _origionalPoints;
 @synthesize polyLinePoints = _polyLinePoints;
 @synthesize pointsContainedInLine = _pointsContainedInLine;
@@ -58,12 +64,16 @@
 @synthesize currentPoint = _currentPoint;
 @synthesize origionalPoint = _origionalPoint;
 
+@synthesize clearLayer = _clearLayer;
+
+
 - (void)dealloc
 {
     CustomerRelease(_origionalPoints);
     CustomerRelease(_polyLinePoints);
     CustomerRelease(_pointsContainedInLine);
     CustomerRelease(_lineColor);
+    CustomerRelease(_origionalValuesForRead);
     CustomerDealloc;
 }
 
@@ -71,6 +81,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        _clearLayer = CGLayerCreateWithContext(context, frame.size, NULL);
         [self setUpTheOrigionalDatasource];
     }
     return self;
@@ -163,6 +175,22 @@
     self.currentPoint = [touch locationInView:self];
     self.origionalPoint = [touch locationInView:self];
     self.hasStartedToDraw = NO;
+    
+    static BOOL firstTouches = NO;
+    if (NO == firstTouches)
+    {
+        _origionalValuesForRead = [[NSMutableArray alloc] initWithArray:self.origionalPoints];
+    }
+    else
+    {
+        [self.polyLinePoints removeAllObjects];
+        [self.pointsContainedInLine removeAllObjects];
+        self.origionalPoints = [NSMutableArray arrayWithArray:self.origionalValuesForRead];
+    }
+    firstTouches = YES;
+    CGContextRef layerContext = CGLayerGetContext(self.clearLayer);
+    CGContextClearRect(layerContext, self.frame);
+    [self setNeedsDisplay];
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
