@@ -69,6 +69,7 @@
 
 - (void)dealloc
 {
+    CGLayerRelease(_clearLayer);
     CustomerRelease(_origionalPoints);
     CustomerRelease(_polyLinePoints);
     CustomerRelease(_pointsContainedInLine);
