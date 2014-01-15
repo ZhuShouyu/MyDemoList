@@ -76,6 +76,7 @@
 		284D344C16DF50B8006B3672 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D344B16DF50B8006B3672 /* MobileCoreServices.framework */; };
 		284D344F16DF51F8006B3672 /* ASIHTTPRequestTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284D344E16DF51F8006B3672 /* ASIHTTPRequestTestViewController.m */; };
 		284DB80718865EFA0008D303 /* IDCardNumberPredicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284DB80618865EFA0008D303 /* IDCardNumberPredicateViewController.m */; };
+		284DB80B188682420008D303 /* RateMyAppInAppStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284DB80A188682420008D303 /* RateMyAppInAppStoreViewController.m */; };
 		2851857A1731145D00353825 /* AllCitiesForWeatherReport.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 285185791731145C00353825 /* AllCitiesForWeatherReport.geojson */; };
 		2867D60F16BB584100959869 /* ReverseGeoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867D60E16BB584100959869 /* ReverseGeoderViewController.m */; };
 		2867D61116BB5A3900959869 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2867D61016BB5A3900959869 /* CoreLocation.framework */; };
@@ -305,6 +306,8 @@
 		284D344E16DF51F8006B3672 /* ASIHTTPRequestTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequestTestViewController.m; sourceTree = "<group>"; };
 		284DB80518865EFA0008D303 /* IDCardNumberPredicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardNumberPredicateViewController.h; sourceTree = "<group>"; };
 		284DB80618865EFA0008D303 /* IDCardNumberPredicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardNumberPredicateViewController.m; sourceTree = "<group>"; };
+		284DB809188682420008D303 /* RateMyAppInAppStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateMyAppInAppStoreViewController.h; sourceTree = "<group>"; };
+		284DB80A188682420008D303 /* RateMyAppInAppStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateMyAppInAppStoreViewController.m; sourceTree = "<group>"; };
 		285185791731145C00353825 /* AllCitiesForWeatherReport.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllCitiesForWeatherReport.geojson; sourceTree = "<group>"; };
 		2867D60D16BB584100959869 /* ReverseGeoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseGeoderViewController.h; sourceTree = "<group>"; };
 		2867D60E16BB584100959869 /* ReverseGeoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseGeoderViewController.m; sourceTree = "<group>"; };
@@ -618,6 +621,7 @@
 		2839B67C168C2E30007069F7 /* MyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				284DB8081886821C0008D303 /* 跳转到App Store给app评分 */,
 				284DB80218865EC80008D303 /* 身份证合法性检查 */,
 				283AC1FA180D3D080061CB40 /* 自定义绘制按钮 */,
 				28DB02EB18093F6600E83FDC /* 颜色拾取器 */,
@@ -847,6 +851,15 @@
 				284DB80618865EFA0008D303 /* IDCardNumberPredicateViewController.m */,
 			);
 			name = "身份证合法性检查";
+			sourceTree = "<group>";
+		};
+		284DB8081886821C0008D303 /* 跳转到App Store给app评分 */ = {
+			isa = PBXGroup;
+			children = (
+				284DB809188682420008D303 /* RateMyAppInAppStoreViewController.h */,
+				284DB80A188682420008D303 /* RateMyAppInAppStoreViewController.m */,
+			);
+			name = "跳转到App Store给app评分";
 			sourceTree = "<group>";
 		};
 		2867D60C16BB580700959869 /* 地址解析 */ = {
@@ -1342,6 +1355,7 @@
 				284D342C16DF4B80006B3672 /* ASIS3BucketRequest.m in Sources */,
 				284D342D16DF4B80006B3672 /* ASIS3ObjectRequest.m in Sources */,
 				284D342E16DF4B80006B3672 /* ASIS3Request.m in Sources */,
+				284DB80B188682420008D303 /* RateMyAppInAppStoreViewController.m in Sources */,
 				284D342F16DF4B80006B3672 /* ASIS3ServiceRequest.m in Sources */,
 				284D344616DF4C62006B3672 /* Reachability.m in Sources */,
 				283AC1FF180D3D4F0061CB40 /* StrapButtonViewController.m in Sources */,
