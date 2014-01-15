@@ -37,6 +37,10 @@
 		282F524B169D1DFB00F85976 /* forest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 282F524A169D1DFB00F85976 /* forest.jpg */; };
 		2837289816E82D0400F6D95A /* GCDBackgroundCaculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2837289716E82D0400F6D95A /* GCDBackgroundCaculatorViewController.m */; };
 		2839B680168C2E68007069F7 /* UIRefreshControllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2839B67F168C2E68007069F7 /* UIRefreshControllViewController.m */; };
+		283AC1FF180D3D4F0061CB40 /* StrapButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AC1FE180D3D4F0061CB40 /* StrapButtonViewController.m */; };
+		283AC205180D3DCA0061CB40 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AC201180D3DCA0061CB40 /* NSString+FontAwesome.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		283AC206180D3DCA0061CB40 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 283AC203180D3DCA0061CB40 /* UIButton+Bootstrap.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		283AC207180D3DCA0061CB40 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 283AC204180D3DCA0061CB40 /* FontAwesome.ttf */; };
 		283F4A6516DC93DB008E3305 /* ImageNamedSupportediPhone5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283F4A6416DC93DB008E3305 /* ImageNamedSupportediPhone5ViewController.m */; };
 		2844E60916B25D3900A40661 /* UITextFieldColorsBorderWhileEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2844E60816B25D3900A40661 /* UITextFieldColorsBorderWhileEditingViewController.m */; };
 		2844E60C16B25D9500A40661 /* OuterGlowTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2844E60B16B25D9500A40661 /* OuterGlowTextField.m */; };
@@ -71,6 +75,7 @@
 		284D344A16DF50AD006B3672 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D344916DF50AD006B3672 /* SystemConfiguration.framework */; };
 		284D344C16DF50B8006B3672 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D344B16DF50B8006B3672 /* MobileCoreServices.framework */; };
 		284D344F16DF51F8006B3672 /* ASIHTTPRequestTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284D344E16DF51F8006B3672 /* ASIHTTPRequestTestViewController.m */; };
+		284DB80718865EFA0008D303 /* IDCardNumberPredicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284DB80618865EFA0008D303 /* IDCardNumberPredicateViewController.m */; };
 		2851857A1731145D00353825 /* AllCitiesForWeatherReport.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 285185791731145C00353825 /* AllCitiesForWeatherReport.geojson */; };
 		2867D60F16BB584100959869 /* ReverseGeoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867D60E16BB584100959869 /* ReverseGeoderViewController.m */; };
 		2867D61116BB5A3900959869 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2867D61016BB5A3900959869 /* CoreLocation.framework */; };
@@ -79,7 +84,6 @@
 		2871D13F16967DA4005E7F0B /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2871D13E16967DA4005E7F0B /* UncaughtExceptionHandler.m */; };
 		2871D1791696B017005E7F0B /* ChangeTableViewBackgroundColorWhenScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 2871D1781696B017005E7F0B /* ChangeTableViewBackgroundColorWhenScroll.m */; };
 		2871D19C1696D412005E7F0B /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2871D1921696D412005E7F0B /* AnimationViewController.m */; };
-		2871D19D1696D412005E7F0B /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2871D1931696D412005E7F0B /* AnimationViewController.xib */; };
 		2871D1A41696D4D1005E7F0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2871D1A31696D4D1005E7F0B /* QuartzCore.framework */; };
 		28764AD1169EABAD0067BE2D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 28764AD0169EABAD0067BE2D /* MBProgressHUD.m */; };
 		28764AD4169EABEC0067BE2D /* HudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28764AD3169EABEC0067BE2D /* HudDemoViewController.m */; };
@@ -127,6 +131,7 @@
 		28D861F916DF8F76007381C4 /* ToggleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D861ED16DF8F76007381C4 /* ToggleCell.m */; };
 		28D861FA16DF8F76007381C4 /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D861EF16DF8F76007381C4 /* UploadViewController.m */; };
 		28D861FB16DF8F76007381C4 /* WebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D861F116DF8F76007381C4 /* WebPageViewController.m */; };
+		28DB02F018093F8B00E83FDC /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DB02EF18093F8B00E83FDC /* ColorPickerViewController.m */; };
 		28E037F816A54C80007EB2F7 /* TearPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E037F716A54C80007EB2F7 /* TearPicturesViewController.m */; };
 		28E037FA16A54D41007EB2F7 /* tearPictures.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28E037F916A54D41007EB2F7 /* tearPictures.jpg */; };
 		28E037FD16A55044007EB2F7 /* TearPictures.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E037FC16A55044007EB2F7 /* TearPictures.m */; };
@@ -224,6 +229,13 @@
 		2837289716E82D0400F6D95A /* GCDBackgroundCaculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDBackgroundCaculatorViewController.m; sourceTree = "<group>"; };
 		2839B67E168C2E68007069F7 /* UIRefreshControllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRefreshControllViewController.h; sourceTree = "<group>"; };
 		2839B67F168C2E68007069F7 /* UIRefreshControllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRefreshControllViewController.m; sourceTree = "<group>"; };
+		283AC1FD180D3D4F0061CB40 /* StrapButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrapButtonViewController.h; sourceTree = "<group>"; };
+		283AC1FE180D3D4F0061CB40 /* StrapButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrapButtonViewController.m; sourceTree = "<group>"; };
+		283AC200180D3DCA0061CB40 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		283AC201180D3DCA0061CB40 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		283AC202180D3DCA0061CB40 /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bootstrap.h"; sourceTree = "<group>"; };
+		283AC203180D3DCA0061CB40 /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
+		283AC204180D3DCA0061CB40 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		283F4A6316DC93DB008E3305 /* ImageNamedSupportediPhone5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageNamedSupportediPhone5ViewController.h; sourceTree = "<group>"; };
 		283F4A6416DC93DB008E3305 /* ImageNamedSupportediPhone5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageNamedSupportediPhone5ViewController.m; sourceTree = "<group>"; };
 		2844E60716B25D3900A40661 /* UITextFieldColorsBorderWhileEditingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldColorsBorderWhileEditingViewController.h; sourceTree = "<group>"; };
@@ -291,6 +303,8 @@
 		284D344B16DF50B8006B3672 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		284D344D16DF51F8006B3672 /* ASIHTTPRequestTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestTestViewController.h; sourceTree = "<group>"; };
 		284D344E16DF51F8006B3672 /* ASIHTTPRequestTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequestTestViewController.m; sourceTree = "<group>"; };
+		284DB80518865EFA0008D303 /* IDCardNumberPredicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardNumberPredicateViewController.h; sourceTree = "<group>"; };
+		284DB80618865EFA0008D303 /* IDCardNumberPredicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardNumberPredicateViewController.m; sourceTree = "<group>"; };
 		285185791731145C00353825 /* AllCitiesForWeatherReport.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllCitiesForWeatherReport.geojson; sourceTree = "<group>"; };
 		2867D60D16BB584100959869 /* ReverseGeoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseGeoderViewController.h; sourceTree = "<group>"; };
 		2867D60E16BB584100959869 /* ReverseGeoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseGeoderViewController.m; sourceTree = "<group>"; };
@@ -305,7 +319,6 @@
 		2871D18F1696D412005E7F0B /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		2871D1911696D412005E7F0B /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimationViewController.h; path = Classes/AnimationViewController.h; sourceTree = "<group>"; };
 		2871D1921696D412005E7F0B /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimationViewController.m; path = Classes/AnimationViewController.m; sourceTree = "<group>"; };
-		2871D1931696D412005E7F0B /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnimationViewController.xib; path = Classes/AnimationViewController.xib; sourceTree = "<group>"; };
 		2871D1991696D412005E7F0B /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		2871D19A1696D412005E7F0B /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		2871D1A31696D4D1005E7F0B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -381,6 +394,8 @@
 		28D861EF16DF8F76007381C4 /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
 		28D861F016DF8F76007381C4 /* WebPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPageViewController.h; sourceTree = "<group>"; };
 		28D861F116DF8F76007381C4 /* WebPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPageViewController.m; sourceTree = "<group>"; };
+		28DB02EE18093F8B00E83FDC /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		28DB02EF18093F8B00E83FDC /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
 		28E037F616A54C80007EB2F7 /* TearPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TearPicturesViewController.h; sourceTree = "<group>"; };
 		28E037F716A54C80007EB2F7 /* TearPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TearPicturesViewController.m; sourceTree = "<group>"; };
 		28E037F916A54D41007EB2F7 /* tearPictures.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tearPictures.jpg; sourceTree = "<group>"; };
@@ -603,6 +618,9 @@
 		2839B67C168C2E30007069F7 /* MyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				284DB80218865EC80008D303 /* 身份证合法性检查 */,
+				283AC1FA180D3D080061CB40 /* 自定义绘制按钮 */,
+				28DB02EB18093F6600E83FDC /* 颜色拾取器 */,
 				2812749B17D86892005FC245 /* 地图圈人 */,
 				28295709177432BD005794B2 /* RichTextLabel */,
 				28AAC5D3171E905A00B99E5C /* AHAlertView */,
@@ -649,6 +667,20 @@
 				2839B67F168C2E68007069F7 /* UIRefreshControllViewController.m */,
 			);
 			name = UIRefreshControl;
+			sourceTree = "<group>";
+		};
+		283AC1FA180D3D080061CB40 /* 自定义绘制按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				283AC200180D3DCA0061CB40 /* NSString+FontAwesome.h */,
+				283AC201180D3DCA0061CB40 /* NSString+FontAwesome.m */,
+				283AC202180D3DCA0061CB40 /* UIButton+Bootstrap.h */,
+				283AC203180D3DCA0061CB40 /* UIButton+Bootstrap.m */,
+				283AC204180D3DCA0061CB40 /* FontAwesome.ttf */,
+				283AC1FD180D3D4F0061CB40 /* StrapButtonViewController.h */,
+				283AC1FE180D3D4F0061CB40 /* StrapButtonViewController.m */,
+			);
+			name = "自定义绘制按钮";
 			sourceTree = "<group>";
 		};
 		283F4A6216DC938D008E3305 /* 增加UIImage imageNamed对iPhone5的支持 */ = {
@@ -808,6 +840,15 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		284DB80218865EC80008D303 /* 身份证合法性检查 */ = {
+			isa = PBXGroup;
+			children = (
+				284DB80518865EFA0008D303 /* IDCardNumberPredicateViewController.h */,
+				284DB80618865EFA0008D303 /* IDCardNumberPredicateViewController.m */,
+			);
+			name = "身份证合法性检查";
+			sourceTree = "<group>";
+		};
 		2867D60C16BB580700959869 /* 地址解析 */ = {
 			isa = PBXGroup;
 			children = (
@@ -843,7 +884,6 @@
 				2871D18F1696D412005E7F0B /* blue.png */,
 				2871D1911696D412005E7F0B /* AnimationViewController.h */,
 				2871D1921696D412005E7F0B /* AnimationViewController.m */,
-				2871D1931696D412005E7F0B /* AnimationViewController.xib */,
 				2871D1991696D412005E7F0B /* green.png */,
 				2871D19A1696D412005E7F0B /* red.png */,
 			);
@@ -998,6 +1038,15 @@
 				28AAC5D5171E908600B99E5C /* CustomAlertViewController.m */,
 			);
 			name = AHAlertView;
+			sourceTree = "<group>";
+		};
+		28DB02EB18093F6600E83FDC /* 颜色拾取器 */ = {
+			isa = PBXGroup;
+			children = (
+				28DB02EE18093F8B00E83FDC /* ColorPickerViewController.h */,
+				28DB02EF18093F8B00E83FDC /* ColorPickerViewController.m */,
+			);
+			name = "颜色拾取器";
 			sourceTree = "<group>";
 		};
 		28E30314168AE3D7004CEA9A = {
@@ -1188,13 +1237,13 @@
 				28E30338168AE3D8004CEA9A /* Default@2x.png in Resources */,
 				28E3033A168AE3D8004CEA9A /* Default-568h@2x.png in Resources */,
 				28E30340168AE3D8004CEA9A /* MyDemoListViewController.xib in Resources */,
-				2871D19D1696D412005E7F0B /* AnimationViewController.xib in Resources */,
 				282F5249169D1D4300F85976 /* ReflectionViewExampleViewController.xib in Resources */,
 				282F524B169D1DFB00F85976 /* forest.jpg in Resources */,
 				28764AD6169EAC020067BE2D /* HudDemoViewController.xib in Resources */,
 				28764ADB169EAC2B0067BE2D /* 37x-Checkmark.png in Resources */,
 				28764ADC169EAC2B0067BE2D /* 37x-Checkmark@2x.png in Resources */,
 				28764ADD169EAC2B0067BE2D /* Icon.png in Resources */,
+				283AC207180D3DCA0061CB40 /* FontAwesome.ttf in Resources */,
 				28764ADE169EAC2B0067BE2D /* Icon@2x.png in Resources */,
 				28764AFA169EB4670067BE2D /* balloon@2x.png in Resources */,
 				28764AFB169EB4670067BE2D /* choseBtn@2x.png in Resources */,
@@ -1227,6 +1276,7 @@
 				28E30330168AE3D8004CEA9A /* main.m in Sources */,
 				2829570E177432D2005794B2 /* PPLabel.m in Sources */,
 				28E30334168AE3D8004CEA9A /* MyDemoListAppDelegate.m in Sources */,
+				284DB80718865EFA0008D303 /* IDCardNumberPredicateViewController.m in Sources */,
 				28E3033D168AE3D8004CEA9A /* MyDemoListViewController.m in Sources */,
 				28E30349168AE412004CEA9A /* ModelViewController.m in Sources */,
 				28E3034C168AE4AA004CEA9A /* MyDemoListResource.m in Sources */,
@@ -1235,6 +1285,7 @@
 				2871D13F16967DA4005E7F0B /* UncaughtExceptionHandler.m in Sources */,
 				2871D1791696B017005E7F0B /* ChangeTableViewBackgroundColorWhenScroll.m in Sources */,
 				2871D19C1696D412005E7F0B /* AnimationViewController.m in Sources */,
+				283AC206180D3DCA0061CB40 /* UIButton+Bootstrap.m in Sources */,
 				28FE923A169BAE080068FA2D /* GetCurrentTimeInfoViewController.m in Sources */,
 				282F5244169D1CD000F85976 /* ReflectionView.m in Sources */,
 				282F5247169D1D1500F85976 /* ReflectionViewExampleViewController.m in Sources */,
@@ -1279,6 +1330,7 @@
 				284D342216DF4B80006B3672 /* ASIWebPageRequest.m in Sources */,
 				284D342316DF4B80006B3672 /* ASICloudFilesCDNRequest.m in Sources */,
 				284D342416DF4B80006B3672 /* ASICloudFilesContainer.m in Sources */,
+				283AC205180D3DCA0061CB40 /* NSString+FontAwesome.m in Sources */,
 				284D342516DF4B80006B3672 /* ASICloudFilesContainerRequest.m in Sources */,
 				284D342616DF4B80006B3672 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				28295711177432EB005794B2 /* RichTextLabelViewController.m in Sources */,
@@ -1292,6 +1344,7 @@
 				284D342E16DF4B80006B3672 /* ASIS3Request.m in Sources */,
 				284D342F16DF4B80006B3672 /* ASIS3ServiceRequest.m in Sources */,
 				284D344616DF4C62006B3672 /* Reachability.m in Sources */,
+				283AC1FF180D3D4F0061CB40 /* StrapButtonViewController.m in Sources */,
 				284D344F16DF51F8006B3672 /* ASIHTTPRequestTestViewController.m in Sources */,
 				28D861F216DF8F76007381C4 /* AuthenticationViewController.m in Sources */,
 				28D861F316DF8F76007381C4 /* DetailCell.m in Sources */,
@@ -1305,6 +1358,7 @@
 				28D861FB16DF8F76007381C4 /* WebPageViewController.m in Sources */,
 				282AFF7116E091740042F030 /* BTSPieLayer.m in Sources */,
 				282AFF7216E091740042F030 /* BTSPieView.mm in Sources */,
+				28DB02F018093F8B00E83FDC /* ColorPickerViewController.m in Sources */,
 				282AFF7316E091740042F030 /* BTSSliceLayer.m in Sources */,
 				282AFF7616E092290042F030 /* BTSPieViewController.m in Sources */,
 				282AFF7916E099470042F030 /* BTSSliceData.m in Sources */,
@@ -1402,7 +1456,7 @@
 					"${SDK_DIR}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "MyDemoList/MyDemoList-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
@@ -1426,7 +1480,7 @@
 					"${SDK_DIR}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "MyDemoList/MyDemoList-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",

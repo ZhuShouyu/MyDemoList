@@ -12,6 +12,8 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
+#import "GloableHeader.h"
+
 #ifndef __MODEOVIEWCONTRLLER__
 #define __MODEOVIEWCONTRLLER__
 #import "ModelViewController.h"
@@ -46,8 +48,10 @@
 
 
 
-#ifndef __OPTIMIZE__
-#define NSLog(...)      NSLog(__VA_ARGS__)
-#else
-#define NSLog(...)      {}
-#endif
+//#ifndef __OPTIMIZE__
+//#define NSLog(...)      NSLog(__VA_ARGS__)
+//#else
+//#define NSLog(...)      {}
+
+
+//#endif

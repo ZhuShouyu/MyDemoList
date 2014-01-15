@@ -43,8 +43,11 @@
 }
 - (void)rightBarButtonClick:(id)sender
 {
-    NSURL *appURL = [NSURL URLWithString:@"HelloWorld://wwww.baidu.com"];
-    [[UIApplication sharedApplication] openURL:appURL];
+    NSURL *appURL = [NSURL URLWithString:@"LNExperienceStorePro:"];
+    if ([[UIApplication sharedApplication] canOpenURL:appURL])
+    {
+        [[UIApplication sharedApplication] openURL:appURL];
+    }
 }
 
 - (void)viewDidLoad

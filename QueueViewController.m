@@ -40,23 +40,28 @@
 	ASIHTTPRequest *request;
 	request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:@"http://allseeing-i.com/ASIHTTPRequest/tests/images/small-image.jpg"]];
 	[request setDownloadDestinationPath:[[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"1.png"]];
+    [request setCompletionBlock:^{
+        UIImage *img = [UIImage imageWithContentsOfFile:[request downloadDestinationPath]];
+        [imageView1 setImage:img];
+    }];
 	[request setDownloadProgressDelegate:imageProgressIndicator1];
     [request setUserInfo:[NSDictionary dictionaryWithObject:@"request1" forKey:@"name"]];
-	[networkQueue addOperation:request];
+    [request startAsynchronous];
+//	[networkQueue addOperation:request];
+//	
+//	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:@"http://allseeing-i.com/ASIHTTPRequest/tests/images/medium-image.jpg"]] autorelease];
+//	[request setDownloadDestinationPath:[[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"2.png"]];
+//	[request setDownloadProgressDelegate:imageProgressIndicator2];
+//    [request setUserInfo:[NSDictionary dictionaryWithObject:@"request2" forKey:@"name"]];
+//	[networkQueue addOperation:request];
+//	
+//	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:@"http://allseeing-i.com/ASIHTTPRequest/tests/images/large-image.jpg"]] autorelease];
+//	[request setDownloadDestinationPath:[[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"3.png"]];
+//	[request setDownloadProgressDelegate:imageProgressIndicator3];
+//    [request setUserInfo:[NSDictionary dictionaryWithObject:@"request3" forKey:@"name"]];
+//	[networkQueue addOperation:request];
 	
-	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:@"http://allseeing-i.com/ASIHTTPRequest/tests/images/medium-image.jpg"]] autorelease];
-	[request setDownloadDestinationPath:[[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"2.png"]];
-	[request setDownloadProgressDelegate:imageProgressIndicator2];
-    [request setUserInfo:[NSDictionary dictionaryWithObject:@"request2" forKey:@"name"]];
-	[networkQueue addOperation:request];
-	
-	request = [[[ASIHTTPRequest alloc] initWithURL:[NSURL URLWithString:@"http://allseeing-i.com/ASIHTTPRequest/tests/images/large-image.jpg"]] autorelease];
-	[request setDownloadDestinationPath:[[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"3.png"]];
-	[request setDownloadProgressDelegate:imageProgressIndicator3];
-    [request setUserInfo:[NSDictionary dictionaryWithObject:@"request3" forKey:@"name"]];
-	[networkQueue addOperation:request];
-	
-	[networkQueue go];
+//	[networkQueue go];
 }
 
 

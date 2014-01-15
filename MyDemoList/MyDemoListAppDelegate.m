@@ -27,6 +27,7 @@ typedef NSString * (^saySomething)(NSString *temp, id);
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
 #ifdef DEBUG
     InstallUncaughtExceptionHandler();
 #endif
